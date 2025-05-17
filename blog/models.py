@@ -37,5 +37,3 @@ class Post(models.Model):
                                                 self.publish.day,
                                                 self.slug])
 
-posts = Post.objects.all()
-p_posts = Post.published.all()

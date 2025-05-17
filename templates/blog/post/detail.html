@@ -1,5 +1,5 @@
 {% extends 'blog/base.html' %}
-{% block title %}{{ post.title }}{% endblock title %}
+{% block title %}{{ post.title }}{% endblock %}
 
 {% block content %} 
     <h1>
@@ -10,5 +10,5 @@
     </p>
 
     {{ post.body|linebreaks }}
-{% endblock content %}  
+{% endblock %}  
 
