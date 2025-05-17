@@ -2,7 +2,7 @@
 {% block title %}IT-News{% endblock %}
 
 {% block content %}
-    <h1>IT-Newssss</h1>
+    <h1>IT-News</h1>
     {% for post in posts %}
         <div class="post">
             <h2>
@@ -10,6 +10,9 @@
             </h2>
             <p class="date">
                 Published {{ post.publish }} by {{ post.author }}
+            </p>
+            <p>
+                {{ post.body|truncatewords:25 }}
             </p>
         </div>
     {% endfor %}
